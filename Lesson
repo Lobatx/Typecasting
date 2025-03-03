@@ -1,0 +1,40 @@
+# Typecasting is the process of converting a variable from one data type to another
+#         str(), int(), float(), bool()
+
+name = "Loba TX"
+age = 12
+bank_balance = 4.6
+is_youtuber = True
+
+print(type(name))
+print(type(age))
+print(type(bank_balance))
+print(type(is_youtuber))
+
+bank_balance = int(bank_balance)
+print(bank_balance)
+
+age = float(age)
+print(age)
+
+age = str(age)
+
+age += "1"
+
+print(age)
+
+name = bool(name)
+print(name)
+
+
+# Input () = A function that prompts the user to enter data
+#            Returns the entered data as a string
+
+input("What is your name?:")
+
+name = input("What is your name?:")
+profession = input("What is your profession?:")
+
+print(f"Hey {name}!")
+print("HAPPY WORKER'S DAY")
+print(f"You are the best {profession}!")
