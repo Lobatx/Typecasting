@@ -29,12 +29,15 @@ print(name)
 
 # Input () = A function that prompts the user to enter data
 #            Returns the entered data as a string
-
-input("What is your name?:")
-
-name = input("What is your name?:")
-profession = input("What is your profession?:")
-
-print(f"Hey {name}!")
-print("HAPPY WORKER'S DAY")
+def prefix (name,gender):
+    if(gender == 'M' or gender == 'm'):
+        print("Welcome to Zenith, Mr.", name)
+    elif (gender == 'F' or gender == 'f'):
+        print("Welcome to Zenith Mrs.", name)
+    else:
+        print("Please enter only M or F in gender")
+name = input("Please state your name: ")
+gender = input("Enter your gender: M for Male, F for Female: ")
+profession = input("What is your profession?: ")
+prefix(name,gender)
 print(f"You are the best {profession}!")
